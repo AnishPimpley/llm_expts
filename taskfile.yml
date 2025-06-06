@@ -1,0 +1,13 @@
+version: '3'
+
+dotenv: ['.env_local']
+
+tasks:
+  default:
+    cmds:
+      - echo "Run 'task --list' to see available tasks"
+
+  verify-env:
+    desc: Verify that the environment is properly configured
+    cmds:
+      - echo $GEMINI_FREE_API_KEY
